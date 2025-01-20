@@ -1,6 +1,6 @@
 [project]
 name = "eda-cho"
-version = "0.3.2"
+version = "0.3.3"
 description = "Default template for PDM package"
 authors = [
     {name = "cho6019", email = "j01040864205@gmail.com"},
@@ -31,4 +31,3 @@ test = [
 ]
 
 [project.urls]
-test = "eda_cho.cli:group_by_count"
