@@ -17,6 +17,17 @@ $ jupyter lab
 
 ```
 
+### HOW TO USE
+```bash
+
+$ pip install eda-cho or pdm add eda-cho
+$ python
+>>> from eda_cho.cli import group_by_count
+>>> group_by_count('Text_For_Search')
+
+
+```
+
 
 ### REF
 - [install jupyter](https://jupyter.org/install)

@@ -1,6 +1,6 @@
 [project]
 name = "eda-cho"
-version = "0.3.0"
+version = "0.3.2"
 description = "Default template for PDM package"
 authors = [
     {name = "cho6019", email = "j01040864205@gmail.com"},
@@ -29,3 +29,6 @@ dev = [
 test = [
     "pytest>=8.3.4",
 ]
+
+[project.urls]
+test = "eda_cho.cli:group_by_count"
