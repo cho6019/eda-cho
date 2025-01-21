@@ -20,11 +20,16 @@ $ jupyter lab
 ### HOW TO USE
 ```bash
 
+- 입력값 : 검색어(str) 정렬(bool) 개수(int)
+- 범위에 맞지 않는 개수 입력 시 무시하고 결과 그대로 표
+기
 $ pip install eda-cho or pdm add eda-cho
 $ python
 >>> from eda_cho.cli import group_by_count
->>> group_by_count('Text_For_Search')
+>>> group_by_count('Text_For_Search', True or False, Int For Count)
 
+$ Cli
+>>> cho-test Text_For_Search True_or_False Int_for_Count
 
 ```
 
