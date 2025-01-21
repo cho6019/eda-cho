@@ -14,7 +14,9 @@ def group_by_count(keyword: str, ascend: bool, rowsize: int):
         sdf = sdf
     else:
         sdf = sdf[0:(rowsize)]
-    print(sdf.to_string(index=False))
+    result = sdf.to_string(index=False)
+    print(result)
+    return result
 
 def entry_point():
     typer.run(group_by_count)

@@ -31,6 +31,8 @@ $ python
 $ Cli
 >>> cho-test Text_For_Search True_or_False Int_for_Count
 
+$ pytest
+>>> pytest tests/
 ```
 
 
