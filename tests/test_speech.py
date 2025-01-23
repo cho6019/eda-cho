@@ -75,3 +75,8 @@ def test_dic():
     for a in presidents_speeches.keys():
         president_row = df[df['president'] == a]
         assert president_row.iloc[0]['count'] == presidents_speeches[a]
+
+
+def test_count_sum_check():
+    df = group_by_count('자유')
+    assert all(df['count'] <= df['keyword_count'])
