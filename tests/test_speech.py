@@ -1,5 +1,7 @@
 from eda_cho.cli import group_by_count
 import pandas as pd
+import pytest
+
 
 def test_search_exception():
     row_count = 13
@@ -8,6 +10,16 @@ def test_search_exception():
     # assert
     assert isinstance(df, pd.DataFrame)
     assert len(df) < row_count
+
+def test_정열_및_행수제한(is_asc, president):
+    row_count = 3
+
+    df = group_by_count(keyword='자유', asc=is_asc, rcnt=row_count)
+    assert isinstance(df, pd.DataFrame)
+    assert df.iloc[0]['president'] == president
+    assert len(df) == row_count
+
+
 
 def test_정열_및_행수제한():
     # given
