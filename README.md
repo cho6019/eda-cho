@@ -29,7 +29,9 @@ $ python
 >>> group_by_count('Text_For_Search', True or False, Int For Count)
 
 $ Cli
->>> cho-test Text_For_Search True_or_False Int_for_Count
+>>> ex: cho-test 자유 --asc --rcnt 3
+>>> ex: cho-test 자유 --no-asc --rcnt 4
+
 
 $ pytest
 >>> pytest tests/
